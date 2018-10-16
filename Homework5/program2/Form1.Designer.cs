@@ -186,6 +186,7 @@
             this.Name = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

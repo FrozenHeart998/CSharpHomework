@@ -125,7 +125,7 @@
     <value>Sitka Text, 9pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 52</value>
+    <value>705, 25</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
@@ -376,7 +376,7 @@
     <value>Sitka Text, 9pt, style=Bold</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>705, 243</value>
+    <value>705, 52</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -636,11 +636,14 @@
   <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="checkBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 30</value>
+    <value>607, 30</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 16</value>
