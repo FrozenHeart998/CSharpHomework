@@ -403,24 +403,27 @@
     <value>True</value>
   </metadata>
   <data name="comboBox1.Items" xml:space="preserve">
-    <value>粉色</value>
+    <value>七彩</value>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
-    <value>紫色</value>
+    <value>粉色</value>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
-    <value>红色</value>
+    <value>紫色</value>
   </data>
   <data name="comboBox1.Items3" xml:space="preserve">
-    <value>绿色</value>
+    <value>红色</value>
   </data>
   <data name="comboBox1.Items4" xml:space="preserve">
-    <value>蓝色</value>
+    <value>绿色</value>
   </data>
   <data name="comboBox1.Items5" xml:space="preserve">
-    <value>黄色</value>
+    <value>蓝色</value>
   </data>
   <data name="comboBox1.Items6" xml:space="preserve">
+    <value>黄色</value>
+  </data>
+  <data name="comboBox1.Items7" xml:space="preserve">
     <value>黑色</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">

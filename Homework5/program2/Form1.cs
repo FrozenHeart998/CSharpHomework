@@ -36,17 +36,9 @@ namespace program2
                 return;
             }
 
-            if (!checkBox1.Checked)
-            {
-                setData();
-                setPen();
-            }
-            else
-            {
-                random();
-                setData();
-                setPen();
-            }
+            setData();
+            setPen();
+
             drawCayleyTree(10, 200, 310, 100, -Math.PI / 2);
         }
 
@@ -61,7 +53,7 @@ namespace program2
             textBox5.Text = (randomNum.NextDouble() * 4).ToString();
             textBox6.Text = randomNum.NextDouble().ToString();
             textBox7.Text = randomNum.NextDouble().ToString();
-            int num = randomNum.Next() % comboBox1.Items.Count;
+            int num = randomNum.Next(1, 8);
             comboBox1.Text = comboBox1.Items[num].ToString();
         }
 
@@ -71,17 +63,33 @@ namespace program2
             {
                 th1 = num1 * Math.PI / 180;
             }
+            else
+            {
+                th1 = 30 * Math.PI / 180;
+            }
             if (double.TryParse(textBox2.Text, out double num2) == true)
             {
                 th2 = num2 * Math.PI / 180;
+            }
+            else
+            {
+                th2 = 20 * Math.PI / 180;
             }
             if (double.TryParse(textBox3.Text, out double num3) == true)
             {
                 per1 = num3;
             }
+            else
+            {
+                per1 = 0.6;
+            }
             if (double.TryParse(textBox4.Text, out double num4) == true)
             {
                 per2 = num4;
+            }
+            else
+            {
+                per2 = 0.7;
             }
             if (double.TryParse(textBox6.Text, out double num5) == true)
             {
@@ -91,6 +99,10 @@ namespace program2
                 }
                 k1 = num5;
             }
+            else
+            {
+                k1 = 1;
+            }
             if (double.TryParse(textBox7.Text, out double num6) == true)
             {
                 if (num6 > 1 || num6 <= 0)
@@ -99,41 +111,86 @@ namespace program2
                 }
                 k2 = num6;
             }
+            else
+            {
+                k2 = 1;
+            }
         }
 
         void setPen()
         {
-            if (comboBox1.Text == "蓝色")
+            if (comboBox1.Text == "七彩")
             {
-                pen.Color = Color.Blue;
+                Random randomColor = new Random();
+                int randomNum = randomColor.Next(1, 8);
+                if (comboBox1.Items[randomNum].ToString() == "蓝色")
+                {
+                    pen.Color = Color.Blue;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "红色")
+                {
+                    pen.Color = Color.Red;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "黑色")
+                {
+                    pen.Color = Color.Black;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "粉色")
+                {
+                    pen.Color = Color.Pink;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "绿色")
+                {
+                    pen.Color = Color.Green;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "黄色")
+                {
+                    pen.Color = Color.Yellow;
+                }
+                else if (comboBox1.Items[randomNum].ToString() == "紫色")
+                {
+                    pen.Color = Color.Purple;
+                }
             }
-            else if (comboBox1.Text == "红色")
+            else
             {
-                pen.Color = Color.Red;
+                if (comboBox1.Text == "蓝色")
+                {
+                    pen.Color = Color.Blue;
+                }
+                else if (comboBox1.Text == "红色")
+                {
+                    pen.Color = Color.Red;
+                }
+                else if (comboBox1.Text == "黑色")
+                {
+                    pen.Color = Color.Black;
+                }
+                else if (comboBox1.Text == "粉色")
+                {
+                    pen.Color = Color.Pink;
+                }
+                else if (comboBox1.Text == "绿色")
+                {
+                    pen.Color = Color.Green;
+                }
+                else if (comboBox1.Text == "黄色")
+                {
+                    pen.Color = Color.Yellow;
+                }
+                else if (comboBox1.Text == "紫色")
+                {
+                    pen.Color = Color.Purple;
+                }
             }
-            else if (comboBox1.Text == "黑色")
-            {
-                pen.Color = Color.Black;
-            }
-            else if (comboBox1.Text == "粉色")
-            {
-                pen.Color = Color.Pink;
-            }
-            else if (comboBox1.Text == "绿色")
-            {
-                pen.Color = Color.Green;
-            }
-            else if (comboBox1.Text == "黄色")
-            {
-                pen.Color = Color.Yellow;
-            }
-            else if (comboBox1.Text == "紫色")
-            {
-                pen.Color = Color.Purple;
-            }
+
             if (float.TryParse(textBox5.Text, out float num) == true)
             {
                 pen.Width = num;
+            }
+            else
+            {
+                pen.Width = 1;
             }
         }
 
@@ -142,6 +199,16 @@ namespace program2
             if (n == 0)
             {
                 return;
+            }
+            if (checkBox1.Checked)
+            {
+                random();
+                setData();
+                setPen();
+            }
+            else
+            {
+                setPen();
             }
 
             double tempX = x0 + leng * Math.Cos(th);
