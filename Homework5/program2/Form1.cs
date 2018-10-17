@@ -39,7 +39,7 @@ namespace program2
             setData();
             setPen();
 
-            drawCayleyTree(10, 200, 310, 100, -Math.PI / 2);
+            drawCayleyTree(10, 350, 450, 100, -Math.PI / 2);
         }
 
         void random()
