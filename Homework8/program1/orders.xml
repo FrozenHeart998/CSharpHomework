@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <num>20160229193</num>
+    <name>小红</name>
+    <product>笔记本</product>
+    <cost>5</cost>
+    <phone>18523648191</phone>
+  </Order>
+  <Order>
+    <num>20080808888</num>
+    <name>小军</name>
+    <product>羽毛球拍</product>
+    <cost>100</cost>
+    <phone>13224566791</phone>
+  </Order>
+  <Order>
+    <num>20170228789</num>
+    <name>孟昊</name>
+    <product>奶茶</product>
+    <cost>10</cost>
+    <phone>12345678910</phone>
+  </Order>
+  <Order>
+    <num>20170328789</num>
+    <name>余念麟</name>
+    <product>笔记本</product>
+    <cost>5</cost>
+    <phone>13519435618</phone>
+  </Order>
+</ArrayOfOrder>
